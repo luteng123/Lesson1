@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SlidingPaneLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#0F0"
+        android:id="@+id/sliding"
+        tools:context="com.luteng.lesson1.SlidingActivity">
+
+        <LinearLayout
+                android:id="@+id/menu"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="left|start"
+                android:orientation="vertical"
+                android:background="#F0F"
+                >
+                <TextView
+                        android:text="123456789"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+                <!--layout_gravity兼容性写法-->
+
+        </LinearLayout>
+        <FrameLayout
+                android:id="@+id/sliding_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:elevation="5dp"
+                android:background="#FFF"
+                >
+                <!--高5dp，就体现显示出来，盖上LinearLayout,21以上有效-->
+
+                <TextView
+                        android:text="Hello World!"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+        </FrameLayout>
+
+
+
+
+</android.support.v4.widget.SlidingPaneLayout>

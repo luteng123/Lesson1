@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item android:title="第一项" android:id="@+id/item_1"/>
+        <item android:title="第二项" android:id="@+id/item_2"/>
+        <item android:title="第三项" android:id="@+id/item_3"/>
+        <item android:title="第四项" android:id="@+id/item_4"/>
+    </group>
+    <item android:title="小分组">
+        <menu>
+            <item android:title="设置" android:id="@+id/item_small_setting"/>
+            <item android:title="我的" android:id="@+id/item_small_mine"/>
+            <item android:title="退出" android:id="@+id/item_small_exit"/>
+            <item android:title="测试1" android:id="@+id/item_small_1"/>
+            <item android:title="测试2" android:id="@+id/item_small_2"/>
+            <item android:title="测试3" android:id="@+id/item_small_3"/>
+        </menu>
+
+    </item>
+
+</menu>
